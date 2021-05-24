@@ -108,97 +108,106 @@
             <div class="form-panel">
               <div class=" form">
                 <form class="cmxform form-horizontal style-form" id="commentForm" method="get" action="">
+                 
+                    <select id='lang'>
+                      <option value=''>Select Language</option>
+                      <option value='1'>Kannada</option>
+                      <option value='2'>English</option>
+                    </select>
+                    <button id='auto_gen_btn' onclick='generateCode()'>Generate Code</button>
+                  
+                  <div class='container' style='display:none;' >
                   <div class="form-group ">
                     <label for="cname" class="control-label col-lg-2">Magazine Code</label>
                     <div class="col-lg-4">
-                      <input class="form-control" id="disabledInput" type="text" placeholder="Auto Populated" disabled/>
+                      <input class="form-control" id="magazine_code" type="text" placeholder="Auto Populated" disabled/>
                     </div>
                     <label for="cname" class="control-label col-lg-2">Full Code</label>
                     <div class="col-lg-4">
-                      <input class="form-control" id="disabledInput" type="text" placeholder="Auto Populated" disabled/>
+                      <input class="form-control" id="full_code" type="text" placeholder="Auto Populated" disabled/>
                     </div>
                   </div> 
                   <div class="form-group ">
-                    <label for="cname" class="control-label col-lg-2">Name (required)</label>
+                    <label for="cname"  class="control-label col-lg-2">Name (required)</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_name" name="name" minlength="2" type="text" required />
                     </div>
                   </div>
                   <div class="form-group ">
                     <label for="cname" class="control-label col-lg-2">Phone Number</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_number" name="name" minlength="2" type="text" required />
                     </div>
                     <label for="cname" class="control-label col-lg-2">Title</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_title" name="name" minlength="2" type="text" required />
                     </div>
                   </div> 
                   <div class="form-group ">
                     <label for="cemail" class="control-label col-lg-2">Address Line 1</label>
                     <div class="col-lg-6">
-                      <input class="form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class="form-control" id="contact_address_1" name="name" minlength="2" type="text" required />
                     </div>
                   </div>
                   <div class="form-group ">
                     <label for="cemail" class="control-label col-lg-2">Address Line 2</label>
                     <div class="col-lg-6">
-                      <input class="form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class="form-control" id="contact_address_2" name="name" minlength="2" type="text" required />
                     </div>
                   </div>
                   <div class="form-group ">
                     <label for="cemail" class="control-label col-lg-2">Address Line 3</label>
                     <div class="col-lg-6">
-                      <input class="form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class="form-control" id="contact_address_3" name="name" minlength="2" type="text" required />
                     </div>
                   </div>
                   <div class="form-group ">
                     <label for="cname" class="control-label col-lg-2">City/Town</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_city" name="name" minlength="2" type="text" required />
                     </div>
                     <label for="cname" class="control-label col-lg-2">District</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_district" name="name" minlength="2" type="text" required />
                     </div>
                   </div> 
                   <div class="form-group ">
                     <label for="cname" class="control-label col-lg-2">State</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_state" name="name" minlength="2" type="text" required />
                     </div>
                     <label for="cname" class="control-label col-lg-2">Pincode</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_pincode" name="name" minlength="2" type="text" required />
                     </div>
                   </div> 
                   <div class="form-group ">
                     <label for="cname" class="control-label col-lg-2">Country</label>
                     <div class="col-lg-4">
-                      <input class=" form-control" id="cname" name="name" minlength="2" type="text" required />
+                      <input class=" form-control" id="contact_country" name="name" minlength="2" type="text" required />
                     </div>
                   </div>
                   <div class="form-group ">
                     <label for="cemail" class="control-label col-lg-2">E-Mail (required)</label>
                     <div class="col-lg-6">
-                      <input class="form-control " id="cemail" type="email" name="email" required />
+                      <input class="form-control " id="contact_email_id" type="email" name="email" required />
                     </div>
                   </div>
                   <div class="form-group ">
                     <label for="cname" class="control-label col-lg-2">No of copies</label>
                     <div class="col-lg-2">
-                      <input class="form-control" id="cname" type="text" placeholder="No of copies"/>
+                      <input class="form-control" id="no_of_copies" type="text" placeholder="No of copies"/>
                     </div>
                     <label for="cname" class="control-label col-lg-2">Record Status</label>
                     <div class="col-lg-2">
-                      <input class="form-control" id="cname" type="text" placeholder="Record Status"/>
+                      <input class="form-control" id="record_status" type="text" placeholder="Record Status"/>
                     </div>
-                    <label for="cname" class="control-label col-lg-2">Language</label>
+                    <!-- <label for="cname" class="control-label col-lg-2">Language</label>
                     <div class="col-lg-2">
                       <input class="form-control" id="cname" type="text" placeholder="Language"/>
-                    </div>
+                    </div> -->
                   </div> 
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label class="control-label col-md-3">Advance Datetimepicker</label>
                     <div class="col-md-4">
                       <div data-date="2014-02-01T10:05:00Z" class="input-group date form_datetime-adv">
@@ -209,13 +218,14 @@
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
                   <div class="form-group">
                     <div class="col-lg-offset-2 col-lg-6">
                       <button class="btn btn-theme" type="submit">Save</button>
                       <button class="btn btn-theme04" type="button">Cancel</button>
                     </div>
                   </div>
+                </div>
                 </form>
               </div>
             </div>
@@ -239,6 +249,7 @@
     <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
+ 
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.min.js"></script>
   <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
@@ -256,7 +267,7 @@
   <script type="text/javascript" src="lib/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
   <script type="text/javascript" src="lib/bootstrap-daterangepicker/moment.min.js"></script>
   <script type="text/javascript" src="lib/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
-
+  
 </body>
 
 </html>
